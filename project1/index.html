@@ -3,12 +3,28 @@
   <head>
 
     <style>
+      body{
+        background-color: lightsteelblue;
+      }
       .container{
         width: 700px;
-        height:500px;
+        height:600px;
+
+        position: absolute;
+        top:58%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid gray;
+        box-shadow: 5px 10px 7px gray;
+        padding:20px;
+        background-color: white;
       }
 
-
+      @media (max-width:600px){
+        .container{
+          width: 400px;
+        }
+      }
 
     </style> 
 
@@ -21,13 +37,39 @@
         const calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: 'dayGridMonth',
           locale: 'zh-tw',
+          height:600,
           navLinks: true,
           headerToolbar:{
-            left:'prev, next today',
+            left:'prev,next today',
             center:'title',
-            right:'dayGridMonth, timeGridWeek, timeGridDay'
+            right:'dayGridMonth,timeGridWeek,timeGridDay'
 
           },
+          events:[
+            {
+              title:'準備日文期中考',
+              start:'2024-11-03',
+              end:'2024-11-06'
+            },
+            {
+              title:'社課',
+              start:'2024-11-07T18:30:00',
+              end:'2024-11-07T20:30:00',
+              color:'rgb(184, 126, 226)'
+            },
+            {
+              title:'寫作業',
+              start:'2024-11-02',
+              allDay:true,
+              color:'rgb(90, 177, 162)'
+            },
+            {
+              title:'青韻市集',
+              start:'2024-11-11',
+              end:'2024-11-16',
+              color:'rgb(184, 126, 226)'
+            }
+          ]
         });
         calendar.render();
       });
