@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三大前端語言</title>
+<html>
+  <head>
+
     <style>
-        h1 {column-span: all; background-color: #f0fff0; text-align: center;}
-        h1:hover{
-            transform: rotate(360deg);
-            transition: 5s;
-        }
-        h2 {color: white; text-align:center; break-before: column;}
-        h2:hover{
-            transform: rotateX(180deg);
-            transition: 5s;
-        }
-        p {padding: 15px; line-height: 25px;}
-        p:hover{
-            transform: rotateY(180deg);
-            transition: 5s;
-        }
-        div {columns: 3; letter-spacing: 1px;}
-    </style>
-</head>
-<body>
-    <div>
-        <h1>網頁前端語言</h1>
-        <h2 style="background-color: rgb(121, 170, 238);">HTML</h2>
-        <p style="background-color: aquamarine;">HTML (HyperText Markup Language) 是用來定義網頁結構的標記語言，它使用標籤來組織內容，讓瀏覽器知道如何顯示網頁的不同部分，例如段落、標題、圖片、表格等，所以它是網頁的骨架，確定了網頁的基本內容和層次結構。</p>
-        <h2 style="background-color: rgb(243, 145, 205);">CSS</h2>
-        <p style="background-color: rgba(225, 165, 243, 0.934);">CSS (Cascading Style Sheets) 是用來控制網頁樣式和佈局的語言，它可以修改 HTML 元素的外觀，比如字體、顏色、邊距、對齊方式等，使得網頁更加美觀，並提供了對不同裝置和螢幕尺寸進行響應式設計的能力，進而提升用戶體驗。</p>
-        <h2 style="background-color: rgb(245, 156, 72);">JavaScript</h2>
-        <p style="background-color: rgb(206, 255, 127);">JavaScript 是一種腳本語言，用來實現網頁上的互動功能，它可以處理用戶輸入、操作網頁中的元素、更新內容或與伺服器進行數據交換，讓網站變得更加動態和有趣，例如：實現表單驗證、動畫效果、動態數據加載等功能。</p>
+      .container{
+        width: 700px;
+        height:500px;
+      }
+
+
+
+    </style> 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const calendarEl = document.getElementById('calendar')
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          locale: 'zh-tw',
+          navLinks: true,
+          headerToolbar:{
+            left:'prev, next today',
+            center:'title',
+            right:'dayGridMonth, timeGridWeek, timeGridDay'
+
+          },
+        });
+        calendar.render();
+      });
+
+    </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div id='calendar'></div>
     </div>
-   
-</body>
+    
+  </body>
 </html>
