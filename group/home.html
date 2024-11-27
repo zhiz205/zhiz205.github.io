@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Coffee Life</h1>
+        <nav  class="option">
+            <div>
+                <a href="game.html">Coffee Flavor Quiz</a>
+                <a href="menu.html">☕ 咖啡廳菜單</a>
+                <a href="home.php">❗線上訂位❗</a>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="summary">
+            <div class="picture">
+            
+            </div>
+            <div class="intro">
+                <h2>咖啡的由來</h2>
+                <h4>我們喝的咖啡是怎麼來的呢？</h4>
+                <p>首先從咖啡豆開始介紹，可以參考下面的相關資訊，另外還有提供咖啡喜好的測驗和菜單的介紹，也許下次在咖啡廳就不會無從選擇了！</p>
+            </div>
+        </section>
+
+        <section class="actions">
+            <div>
+                <h2 class="coffee">~ ~ Introduce ~ ~</h2>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="block">
+                <h2>品種</h2>
+                <p>種類有阿拉比卡、羅布斯塔</p>
+                <button class="more-btn"  data-target="#detail1">more</button>
+            </div>
+            <div class="block">
+                <h2>產地</h2>
+                <p>大致分布於非洲、南美洲等國家</p>
+                <button class="more-btn"  data-target="#detail2">more</button>
+            </div>
+            <div class="block">
+                <h2>處理法</h2>
+                <p>利用日曬或水洗等處理方法</p>
+                <button class="more-btn"  data-target="#detail3">more</button>
+            </div>
+            <div class="block">
+                <h2>烘焙程度</h2>
+                <p>大致分為淺焙、中焙、深焙</p>
+                <button class="more-btn"  data-target="#detail4">more</button>
+            </div>
+        </section>
+        <section class="detail">
+            <div id="detail1" class="detail-section">
+                <h3 align="center">常見品種</h3>
+                <ul>
+                    <li>阿拉比卡
+                        <ul>
+                            <li>生長在西半球的高原地區（蟲害少 收成多）</li>
+                            <li>較羅布斯塔豆味道甜、柔和、酸、咖啡因低</li>
+                        </ul>
+                    </li>    
+                    <li>羅布斯塔
+                        <ul>
+                            <li>綠原酸含量高，不易受蟲害氣候影響</li>
+                            <li>生長在地勢低較炎熱地區</li>
+                            <li>風味較苦澀強烈</li>
+                            <li>咖啡因高</li>
+                        </ul>
+                    </li>    
+                </ul>
+            </div>
+        </section>
+        <section class="detail">    
+            <div id="detail2" class="detail-section">
+                <h3 align="center">常見產地</h3>
+                <ul>
+                    <li>衣索比亞
+                        <ul>
+                            <li>阿拉比卡豆原產地</li>
+                            <li>有糖漿味、明顯的酸性與果香氣味</li>
+                            <li>以濃郁、樸實的咖啡聞名</li>
+                        </ul>
+                    </li>
+                    <li>耶加雪菲
+                        <ul>
+                            <li>原為西達摩產區，但因太具辨識性而獨立出來</li>
+                            <li>風味有柑橘、莓果、花香、茶感</li>
+                        </ul>
+                    </li>
+                    <li>肯亞
+                        <ul>
+                            <li>有糖漿、黑醋栗的芬芳</li>
+                            <li>酸度明顯</li>
+                        </ul>
+                    </li>
+                    <li>哥斯大黎加
+                        <ul>
+                            <li>完美結合乾淨的味道、香氣、適中的酸度，因此成為世界上最好的咖啡之一</li>
+                            <li>標有SHB高海拔嚴格硬度</li>
+                            <li>只允許種阿拉比卡咖啡豆，種植羅布斯塔豆是非法的</li>
+                        </ul>
+                    </li>
+                    <li>瓜地馬拉
+                        <ul>
+                            <li>風味：活潑、辛辣、複雜</li>
+                            <li>以顆粒特大的「大象」咖啡豆聞名</li>
+                        </ul>
+                    </li>
+                    <li>牙買加
+                        <ul>
+                            <li>以顆粒大 品質佳 味道調和 適當的酸苦香醇甜的「藍山咖啡」聞名</li>
+                            <li>是全世界公認的極品咖啡</li>
+                        </ul>
+                    </li>
+                    <li>哥倫比亞
+                        <ul>
+                            <li>僅次巴西待遇世界第二大咖啡生產地</li>
+                            <li>只種阿拉比卡咖啡豆</li>
+                        </ul>
+                    </li>
+                    <li>印尼
+                        <ul>
+                            <li>大膽的風味：泥土味、苦味、香料味、木材味、菸草味、皮革味等（類似不加糖的黑可可）</li>
+                            <li>常用來做混合豆使用</li>
+                            <li>以阿拉比卡原生種的「曼特寧」、安拉卡聞名</li>
+                        </ul>
+                    </li>
+                    <li>越南
+                        <ul>
+                            <li>為羅布斯塔豆為主，以阿拉比卡豆為輔來增加利潤</li>
+                            <li>味道濃烈、有苦味、酸度低、咖啡因高</li>
+                            <li>常用來做混合豆與即溶咖啡</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>       
+        </section>
+        <section class="detail">
+            <div id="detail3" class="detail-section">
+                <h3 align="center">處理法</h3>
+                <ul>
+                    <li>日曬
+                        <ul>
+                            <li>步驟：篩選浮果 -> 曝曬 -> 脫殼去除果皮果肉</li>
+                            <li>風味：酸度 苦度較柔和、甜度果香酒香明顯</li>
+                        </ul>
+                    </li>
+                    <li>水洗
+                        <ul>
+                            <li>步驟：篩選浮果 -> 去除果皮果肉 -> 泡水發酵去除果膠 -> 清洗 -> 乾燥 -> 脫殼</li>
+                            <li>風味：酸度強烈</li>
+                            <li>口感：清爽乾淨</li>
+                        </ul>
+                    </li>
+                    <li>半水洗
+                        <ul>
+                            <li>步驟：篩選浮果 -> 去除雜質果皮果肉 -> 去除果膠 -> 乾燥脫殼 -> 二次乾燥</li>
+                            <li>與水洗相比甜味較高 酸味低 口感沈穩</li>
+                        </ul>
+                    </li>
+                    <li>蜜處理
+                        <ul>
+                            <li>步驟：篩選浮果 -> 去除果皮果肉 -> 曝曬 -> 脫殼</li>
+                            <li>甜味酸度低 帶有果香</li>
+                        </ul>
+                    </li>
+                    <li>濕刨法
+                        <ul>
+                            <li>步驟去除果皮 -> 短時間曝曬乾燥到含水量約35% -> 去除外殼 -> 曬乾到不易腐壞的程度</li>
+                            <li>特殊的青草藥 香草風味</li>
+                            <li>外表顏色為綠色</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="detail">
+            <div id="detail4" class="detail-section">
+                <h3 align="center">烘焙程度</h3>
+                <ul>
+                    <li>淺烘焙(Light Roast)
+                        <ul>
+                            <li>經過短時間的烘焙處理，咖啡生豆中水分還沒完全蒸發</li>
+                            <li>豆子會比較重也比較硬</li>
+                            <li>咖啡因相對較高</li>
+                            <li>保留咖啡豆的原始的風味</li>
+                            <li>通常帶有花香或果香，酸度明顯而苦味較低，口感清新</li>
+                            <li>很適合以手沖方式來沖煮</li>
+                            <li>適合喜歡爽口、沒有厚重苦味咖啡的人群</li>
+                        </ul>
+                    </li>
+                    <li>中烘焙(Medium Roast)
+                        <ul>
+                            <li>經過適中的烘焙時間</li>
+                            <li>豆子呈現出中棕色，表面略帶油光</li>
+                            <li>保留一部分原始的咖啡果實風味</li>
+                            <li>除了會帶有焦糖、巧克力的醇厚與微苦外，也能感受到淡雅的果香氣息</li>
+                            <li>咖啡酸苦適中，能同時感受到咖啡的香、酸、醇、苦</li>
+                            <li>大眾接受度最高的咖啡種類</li>
+                        </ul>
+                    </li>
+                    <li>深烘焙(Dark Roast)
+                        <ul>
+                            <li>經過長時間的高溫烘焙</li>
+                            <li>豆子呈現出深棕色甚至接近黑色，表面有明顯的油光</li>
+                            <li>咖啡因含量相對較低</li>
+                            <li>酸度幾乎完全消失，取而代之的是濃厚的苦味，擁有焦苦風味與濃郁厚實的口感</li>
+                            <li>通常用於Espresso咖啡、拿鐵、美式</li>
+                            <li>適合喜歡重口味咖啡的人群</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        
+<footer>
+</footer>
+
+<script>
+            
+    $(document).ready(function() {
+        // 綁定按鈕點擊事件
+        $(".more-btn").on("click", function() {
+            const target = $(this).data("target"); // 取得目標區塊的 ID
+            
+            
+            // 隱藏所有內容區塊，然後顯示目標區塊
+            $(".detail-section").slideUp(); // 隱藏其他區塊
+            $(target).slideDown(); // 顯示目標區塊
+            
+        });
+    });
+
+    /*
+    document.getElementById('reservationForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // 阻止表單預設提交
+
+        const formData = new FormData(this);
+
+        // 將表單資料以 JSON 格式發送
+        fetch('reservation.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            const messageElement = document.getElementById('responseMessage');
+            if (data.status === 'success') {
+                messageElement.textContent = "訂位成功！我們期待您的到來！";
+                messageElement.style.color = "green";
+            } else {
+                messageElement.textContent = "訂位失敗：" + data.message;
+                messageElement.style.color = "red";
+            }
+        })
+        .catch(error => {
+            console.error('錯誤:', error);
+            document.getElementById('responseMessage').textContent = "系統錯誤，請稍後再試。";
+        });
+    });
+    */
+</script>
+
+</main> 
+</body>
+</html>

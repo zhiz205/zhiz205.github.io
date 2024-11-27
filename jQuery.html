@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const calendarEl = document.getElementById('calendar')
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        })
+        calendar.render()
+      })
+
+    </script>
+  </head>
+  <body>
+    <!--lab4測試
+    <div id="calendar"></div>
+    <script>$('#calendar').fullCalendar();</script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    -->
+    <div id='calendar'></div>
+  </body>
+</html>

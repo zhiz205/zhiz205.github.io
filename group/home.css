@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between; /* 將標題與導覽分開 */
+    align-items: center; /* 垂直居中對齊 */
+    height: 100px;
+    background: #8e6e6e;
+    padding: 0 20px; /* 增加左右內距 */
+    color: white;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0; /* 移除預設外距 */
+}
+
+nav.option {
+    display: flex;
+    justify-content: flex-end; /* 文字靠右 */
+    gap: 20px; /* 增加選項之間的間距 */
+}
+
+nav.option a {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+    
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 動態效果 */
+    border-radius: 5px;
+}
+
+nav.option a:hover {
+    background-color: #e3b49e;
+    color: #6f4f37;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.picture {
+    background-image: url('coffeeAI2.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+    filter: brightness(80%) blur(2px);
+}
+
+.intro {
+    
+    width: 50%;
+    height: 180px;
+    background: #f8e5c3f6;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 8px;
+    
+}
+
+.actions {
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    /*background-color: #f3e9e2;*/
+    background: rgba(255, 248, 240, 0.9);
+    /*background: #ece2d0;*/
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem; /* 調整字體大小 */
+    font-weight: bold;
+    letter-spacing: 2px; /* 增加字距 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #faf3e3;
+    
+}
+
+.block {
+    width: 30%;
+    background: #f8e5c3f6;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 10px; /* 圓角設計 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加卡片陰影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 動態效果 */
+}
+
+.block:hover {
+    transform: translateY(-10px); /* 鼠標懸停時上移 */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* 陰影加強 */
+}
+
+
+.more-btn{
+    padding: 10px 10px;
+    font-size: 18px;
+    background-color:#6b4f4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.more-btn:hover {
+    transform: scale(1.1);
+    background-color: #e3b49e;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
+}
+.detail-section {
+    justify-content: space-around;
+    padding: 20px;
+    /*background-color: #f3e9e2;*/
+    background-color:#faf3e3; 
+    display: none;
+    border-radius: 8px;   
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #DECDBE;
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咖啡廳菜單</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="menu-container">
+        <header>
+            <div class="menu-title">
+                <span>☕ 咖啡廳菜單</span>
+            </div>
+        </header>
+        <main>
+            <h1>歡迎來到我們的咖啡廳！</h1>
+            <div class="menu-sections">
+                <div class="menu-section">
+                    <h2>咖啡</h2>
+                    <div class="menu-item">
+                        <span class="item-name">Espresso</span>
+                        <span class="item-price">$50</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Americano</span>
+                        <span class="item-price">$60</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Latte</span>
+                        <span class="item-price">$70</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Caramel Macchiato</span>
+                        <span class="item-price">$80</span>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <h2>甜點</h2>
+                    <div class="menu-item">
+                        <span class="item-name">Cheesecake</span>
+                        <span class="item-price">$120</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Tiramisu</span>
+                        <span class="item-price">$130</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Chocolate Brownie</span>
+                        <span class="item-price">$110</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Macarons</span>
+                        <span class="item-price">$100</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-sections">
+                <div class="menu-section">
+                    <h2>輕食</h2>
+                    <div class="menu-item">
+                        <span class="item-name">Chicken Sandwich</span>
+                        <span class="item-price">$150</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Caesar Salad</span>
+                        <span class="item-price">$130</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Quiche Lorraine</span>
+                        <span class="item-price">$140</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Avocado Toast</span>
+                        <span class="item-price">$120</span>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <h2>飲品</h2>
+                    <div class="menu-item">
+                        <span class="item-name">Hot Chocolate</span>
+                        <span class="item-price">$70</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Green Tea</span>
+                        <span class="item-price">$60</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Fresh Orange Juice</span>
+                        <span class="item-price">$80</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">Smoothies</span>
+                        <span class="item-price">$90</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <a href="#" class="floating-button" id="homeButton" title="回首頁">🏠</a>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const homeButton = document.getElementById("homeButton");
+
+            // 確認按鈕存在
+            console.log(homeButton); 
+
+            // 按鈕點擊時切換圖標並跳轉到 home.html
+            homeButton.addEventListener("click", (event) => {
+                event.preventDefault(); // 防止默認跳轉行為
+
+                console.log("Button clicked!"); // 查看是否點擊了按鈕
+
+                // 切換圖標
+                if (homeButton.textContent === "🏠") {
+                    homeButton.textContent = "🏚️"; // 切換為房子損壞圖標
+                } else {
+                    homeButton.textContent = "🏠"; // 恢復原圖標
+                }
+
+                // 延遲跳轉到 home.html
+                setTimeout(() => {
+                    window.location.href = "home.html"; // 跳轉到 home.html
+                }, 500); // 延遲 500 毫秒，以便顯示圖標切換效果
+            });
+        });
+    </script>
+</body>
+</html>
